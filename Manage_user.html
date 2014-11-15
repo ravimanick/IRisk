@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IRisk|Management</title>
+        <!-- Bootstrap -->
+    <link href="resource/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resource/css/bootstrap.theme.css" rel="stylesheet">
+    <link href="resource/css/custom.css" rel="stylesheet">
+        <script src="resourse/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="resource/js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+   <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+</head>
+<body>
+<div id="wrapper" class="">
+<div id="sidebar-wrapper" class="toggled">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       <span><img src="resource/images/logoIrisk1.png"> iRisk
+                    </span></a>
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Manage Licence</a>
+                </li>
+                <li>
+                    <a href="#">Manage User</a>
+                </li>
+                <li>
+                    <a href="#">Settings</a>
+                </li>
+               </ul>
+        </div>
+
+
+ <div id="page-content-wrapper">
+<div class="navbar navbar-inverse navbar-fixed" nav role="navigation" id="navbar">
+<div class="col-xs-2"id="menu">
+<a href="#menu-toggle" class="btn btn-info" id="menu-toggle">Menu</a>
+</div>
+<div class="col-xs-3"></div>
+<div class="col-xs-2">
+<img src="resource/images/irisk.png" alt="">
+
+</div>
+<div class=col-xs-3>
+	<ul>
+		<li><span class="glyphicon glyphicon-user white"></span><a href="#">superuser</a></li>
+		<li><span class="glyphicon glyphicon-off white"></span><a href="#">Login</a></li>
+	</ul>
+	</div>
+<div class="col-xs-2">
+<img src="resource/images/logoIrisk.png" alt="">
+</div>
+</div>
+<div class="col-xs-4">
+</div>
+<div class="col-xs-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Manage User</h3>
+        </div>
+        <div class="panel-body">
+
+<div class="Login">
+    <form>
+        <div class="form-group">
+            <label for="inputEmail">UserId</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="UserId">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+    </form>
+</div>
+</div>
+    </div>
+</div>
+<div class="col-xs-2">
+    <div class="well" id="side">
+    <ul>
+        <li><p><span class="glyphicon glyphicon-trash"></span></p></li>
+        <li><p><span class="glyphicon glyphicon-user"></span></p></li>
+        <li><p><span class="glyphicon glyphicon-share"></span></p></li>
+    </ul>
+    </div>
+</div>
+</div>
+
+    </div>
+</body>
+</html>
